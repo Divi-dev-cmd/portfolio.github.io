@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Personnel</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <h1>NIYONSABA + DIVINE</h1>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="projet.html">Projets</a></li>
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section Accueil -->
+  <section id="accueil">
+    <div class="intro">
+      <h2>Je suis <span class="highlight">[Divine]</span>, Développeur passionné par la technologie plus precisement sur le developpement web et le developpement mobile!</h2>
+      <a href="#projets" class="btn">Voir mes projets</a>
+    </div>
+    <div class="image">
+      <img src="images/accueill.png" alt="Développeur">
+    </div>
+  </section>
+
+  
+ <!-- Section À propos -->
+  <section id="apropos">
+    <h2>À propos</h2>
+    <div class="content">
+      <div class="texte">
+        <p>Je m'appelle <span class="highlight">[Niyonsaba Divine]</span>, passionné par la création de sites web modernes et interactifs.<br>
+       Actuellement étudiante en master professionnel dans le domaine de l’eau, avec une spécialisation en science des données.
+       <span class="highlight"> j’ai obtenu une licence en informatique appliquée,précisement dans développement web et mobiles ainsi que la robotique.</span>, 
+       Au fil de mon parcours, j’ai participé à plusieurs projets en utilisant différents langages de programmation, ce qui m’a permis de développer une approche polyvalente et créative. Curieuse de nature, j’aime expérimenter avec les nouvelles technologies 
+       et relever de nouveaux défis techniques et scientifiques.<br>
+        Mon objectif est de mettre mes compétences en informatique et en science des données au service de problématiques concrètes, notamment dans le domaine de la gestion de l’eau et de l’environnement.
+        </p>
+        <a href="#cv.pdf" download onclick="sendCVNotification()" class="btn">Télécharger mon CV</a>
+
+      </div>
+      <div class="photo">
+        <img src="images/Divine.PNG" alt="Photo de profil">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projets">
+    <h2>Mes Projets</h2>
+    <div class="grid-container">
+     <div class="scroll-container"> 
+    <div class="project-card">
+      <p>Site Web pour une institution Financière.<br>#html, #css, #PHP, #MYSQL</p>
+      <a class="voir-btn" href="#">Voir</a>
+    </div>
+    </div>
+    
+     <div class="scroll-container"> 
+    <div class="project-card">
+      <p>Un projet de l'Université, site web pour les diabétiques avec :<br>#html, #css, #MYSQL, #PHP</p>
+      <a class="voir-btn" href="#">Voir</a>
+    </div>
+    </div>
+
+     <div class="scroll-container"> 
+    <div class="project-card">
+      <p>Développement d'une Application Mobile pour les Étudiants avec :<br>#Java, #SQLite, #Android</p>
+      <a class="voir-btn" href="#">Voir</a>
+    </div>
+    </div>
+
+    <div class="scroll-container"> 
+    <div class="project-card">
+      <p>Système de détection de personnes dans le couloir avec :<br>#C, #Arduino</p>
+      <a class="voir-btn" href="#">Voir</a>
+    </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="competences">
+    <h2>Mes Compétences</h2>
+    <div class="bars">
+      <div class="soft-skills">
+        <h3>Soft Skills</h3>
+        <label>Gestion de projet</label>
+        <div class="bar"><div class="progress" style="width: 80%"></div></div>
+        <label>Travail en équipe</label>
+        <div class="bar"><div class="progress" style="width: 90%"></div></div>
+        <label>Adaptabilité</label>
+        <div class="bar"><div class="progress" style="width: 90%"></div></div>
+        <label>Autonomie</label>
+        <div class="bar"><div class="progress" style="width: 90%"></div></div>
+      </div>
+      <div class="hard-skills">
+        <h3>Langage Apprise</h3>
+      <label>HTML/CSS</label>
+        <div class="bar"><div class="progress" style="width: 100%"></div></div>
+        <label>JavaScript</label>
+        <div class="bar"><div class="progress" style="width: 85%"></div></div>
+        <label>Angular / React</label>
+        <div class="bar"><div class="progress" style="width: 80%"></div></div>
+        <label>Node.js / Flutter</label>
+        <div class="bar"><div class="progress" style="width: 70%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact">
+    <h3>Vous cherchez  <span class="highlight">à recruter</span> ? N’hésitez pas à me <span class="highlight">contacter</span></h3>
+    <form id="contactForm">
+      <input type="text" id="prenom" placeholder="Votre prénom" required>
+      <input type="text" id="nom" placeholder="Votre nom" required>
+      <input type="text" id="email" placeholder="Votre email adresse" required>
+      <input type="text" id="sujet" placeholder="Votre sujet" required>
+      <textarea id="message" placeholder="Écrivez votre message ici !" required></textarea>
+      <button class="btn" type="submit">Envoyer</button>
+    </form>
+  </section>
+  <footer>
+    <p>Designed by [Divine Niyonsaba] with HTML, CSS, JS</p>
+    <p>Tous droits réservés - 2025</p>
+  </footer>
+</body>
+</html>
